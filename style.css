@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fff9f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+nav {
+  background: #ff6347;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.nav a:hover {
+  background-color: #ff8263;
+  border-radius: 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-section {
+  margin: 40px 0;
+}
+
+.menu-section h2 {
+  color: #ff6347;
+  margin-bottom: 15px;
+}
+
+.menu-item {
+  position: relative;
+  margin: 8px 0;
+  padding: 10px 15px;
+  background: #fff;
+  border-left: 4px solid #ff6347;
+  transition: opacity 0.3s ease;
+}
+
+.menu-item::before {
+  content: "🍽";
+  margin-right: 10px;
+}
+
+.menu-item:hover {
+  opacity: 0.85;
+  background-color: #fff3ed;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #ff8263;
+  color: white;
+}
+
+#contact {
+  margin-top: 40px;
+  background-color: #ffe3d4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+}
+}
